@@ -1,0 +1,488 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>APLICACIÓN TRES</title>
+<!--grupo CSS-->
+ 
+ <link rel="stylesheet" href="css/temapp3.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ <!--grupo JavaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js"></script>
+ <script src="phonegap.js" type="text/javascript"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+</head>
+
+  
+
+<body>
+ <div data-role="page" id="Principal" data-theme="b">
+  <div data-role="header" data-add-back-btn="false" data-back-btn-text="Regresar"data-back-btn-theme="b">
+   <h1>VOLCÁN POPOCATÉPETL</h1>
+  </div>
+  <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:750px;height:400px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+ 
+  <div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+           <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>ESPECIFICACIONES</h2>
+           <p>Datos del volcán</p>
+           </a>
+         </li>
+         
+         <li class="ui-first-child ui-last-child">
+           <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>ACTIVIDAD</h2>
+           <p>Actividad que tiene el volcán </p>
+           </a>
+         </li>
+         
+         <li class="ui-first-child ui-last-child">
+           <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>PREVENCIÓN</h2>
+           <p>Información que salva vidas</p>
+           </a>
+         </li>
+         
+         <li class="ui-first-child ui-last-child">
+           <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>OTROS VOLCANES</h2>
+           <p>algunos volcanes que existen en el mundo</p>
+           </a>
+         </li>
+    
+    
+    </ul>
+  </div>
+  
+  <br>   
+   <div data-role="footer" align="center" data-theme="b">
+   <br>
+     <div>
+     <img src="imagenes/volcan1.png" width="46" height="46">
+     </div>
+     
+     <div>
+     <h4>Aplicacion Tres</h4>
+     <h4>Yesenia Contreras Sánchez</h4>
+     </div>
+     
+   </div>
+  </div>
+   
+   <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>ESPECIFICACIONES</h1>
+     </div>
+     
+     <div data-role="content" align="center">
+      <div>
+       <img src="imagenes/tam.png" width="90%" height="30%">
+      </div>
+      <div>
+      
+        <div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+         <h1><strong>TAMAÑO</strong></h1>
+           <p><strong>Superficie:</strong> 283,192.53 hectáreas</p>
+           <p><strong>Altura:</strong> 5,426 metros sobre el nivel del mar</p>
+           <p><strong>Diámetro :</strong> mayor de 900 metros </p>
+            <p><strong>Ancho Total:</strong> 400 x 600 metros </p>
+            
+           <div>
+           <img src="imagenes/tam1.png" width="50%" height="20%">
+           </div>
+           
+           <p>Posee un cráter elíptico de paredes empinadas con una profundidad de 150 metros desde el labio inferior. </p>
+           
+         </div>
+        </div>
+        
+        <div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+          <h1><strong>ANTIGÜEDAD</strong></h1>
+          <p>El Popocatépetl fue una divinidad en el México antiguo, era una personificación más de Tláloc según lo apreciamos en el Códice Vaticano 3778, A-Ríos. Pero la montaña que humea proporciona un repertorio mitológico particularmente rico, que va más allá de la “tlaloquización” omnipresente. Al menos así lo demuestran las evidencias del sitio Preclásico de Tetimpa (50 a. C. al 100 d. C.), que encuentra en los adoratorios efigie al Popocatépetl un culto que se remonta 2000 años atrás </p>
+          
+          <div>
+            <img src="imagenes/ant1.png" width="30%" height="20%">
+          </div>
+           <p><strong>El dios de la lluvia en el volcán que humea (Popocatépetl ),
+donde se reúnen los graniceros y los nanaualli o nahuales.</strong> </p>
+    <br>
+             <p> El sitio fue abandonado a consecuencia de una erupción, pero fue esta misma quien lo sepulto y así lo preservó dejando ver en la actualidad por las excavaciones arqueológicas un sitio habitacional construido con tablero y talud acompañado de un pequeño santuario. Para Iwaniszewski, el hallazgo en Tetimpa constituye la más antigua evidencia del culto al Popocatépetl y prueba que este fue relacionado con los conceptos de la muerte y de los ancestros. En el sentido de que el cráter fue considerado como la entrada al mundo subterráneo en donde residían los ancestros. En el período entre el Preclásico y el Clásico, Popocatépetl se vinculaba más bien con el culto a los muertos y antepasados y quizá al fuego y cenizas volcánicas, después fue incorporado al culto del agua y fertilidad. Asociado con la Iztaccíhuatl, el Popocatépetl fue conceptualizado como el ser masculino. </p>
+           
+           
+         </div>
+        </div>
+        
+        <div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+         <h1><strong>LOCALIZACIÓN</strong></h1>
+          <p>El Popocatépetl esta ubicado en los estados de Morelos, Puebla (45 kilometros) y el Estado de México( a 55 kilometros). Al sur de la Sierra Volcánica Transversal que constituye la espina dorsal del Altiplano Mexicano.</p>
+          <br>
+          
+          <div>
+           <img src="imagenes/ubi1.png" width="70%" height="25%">
+          </div>
+          <br>
+           <p>En el Estado de México colinda con los municipios: Tlamanalco, Amecameca, Atlauta y Ecatzingo.</p>
+           <p>Con el estado de Morelos colinda específicamente con el municipio de Tetela del Volcán..</p>
+             <p>Por la parte de Puebla colinda con Huejotzingo, San Salvador el Verde, Domingo Arenas, San Nicolás de los Ranchos y Tochimilco.</p><br>
+           
+         </div>
+        </div>
+      
+      </div>
+     </div>
+     <br> <br> <br> <br> <br>   <br> <br> <br> <br> <br>
+     <div data-role="footer" data-theme="a">
+     <h4>Yesenia Contreras Sanchez</h4>
+     </div>
+  
+   </div>
+   
+   <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>ACTIVIDAD</h1>
+     </div>
+     <div data-role="content" align="center">
+          <div>
+           <img src="imagenes/fumaro.png" width="90%" height="30%">
+          </div>
+      <div>
+      
+     <p> El Popocatépetl es conocido por sus alta actividad volcánica, que se presenta comúnmente. Desde que se reactivó, en 1997, hasta el momento, ha presentado una serie de erupciones de las cuales la más violenta ha sido la del año 2000, y la última la noche del 4 y madrugada del 5 de noviembre de 2014. El volcán es uno de los más monitoreados del mundo y también es uno de los más peligrosos y que amenaza más de 26 millones de personas.</p>
+      
+        <div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+         <h1><strong>CAÍDA DE CENIZA</strong></h1>
+         <p>La ceniza volcánica es una composición de partículas de roca y mineral muy finas (de menos de 2 mm de diámetro) eyectadas por una apertura volcánica. </p>
+          
+          <div>
+            <img src="imagenes/ceni.png" width="40%" height="20%">
+          </div>
+         <ul>
+          <li><strong>19 de junio de 2015:</strong> El volcán Popocatépetl emitió 226 exhalaciones de baja intensidad acompañadas por emisiones de vapor de agua, gas y ligeras cantidades de ceniza, al tiempo que tuvo 35 minutos de tremor armónico. </li><br>
+           
+          <li><strong>18 de Enero de 2016:</strong> el volcán Popocatépetl emitió una fumarola con dirección a Puebla. En municipios cercanos al volcán se produjo la caída de graba y ceniza. </li><br>
+                     
+          <li><strong>13 de Abril de 2016:</strong> En las últimas ocho horas el volcán Popocatépetl registró 20 exhalaciones, mayoritariamente de baja intensidad, acompañadas por la emisión continua de vapor de agua y gas </li><br>
+          </ul> 
+            <div>
+            <img src="imagenes/fuma.png" width="40%" height="20%">
+            </div>
+           
+    
+          
+          
+         </div>
+        </div>
+        
+        <div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+          <h1><strong>ERUPCIÓNES</strong></h1>
+            <p> Una erupción volcánica es una emisión violenta en la superficie terrestre de materias procedentes del interior del volcán. Exceptuando los géiseres, que emiten agua caliente, y los volcanes de lodo, cuya materia, en gran parte orgánica, proviene de yacimientos de hidrocarburos relativamente cercanos a la superficie, las erupciones terrestres se deben a los volcanes.</p>
+            <p>Algunas de las erupciones que ha tenido son las siguentes:</p>
+            
+             <div>
+             <img src="imagenes/eru.png" width="40%" height="20%">
+             </div>
+            
+             <ul>
+          <li><strong> Diciembre de 2000:</strong> Se registró una erupción lo que, siguiendo las predicciones de científicos, motivó la evacuación de miles de personas en las áreas cercanas al volcán.. </li><br>
+           
+          <li><strong>25 de diciembre de 2005:</strong> Se produjo en el cráter del volcán una nueva explosión, que provocó una columna de humo y cenizas de tres kilómetros de altura y la expulsión de lava.  </li><br>
+                     
+          <li><strong>4 de abril de 2016:</strong> Se produjo una columna de ceniza de 2 km y expulsa fragmentos incandescentes que aterrizaron en a 3,5 km de distancia en los flancos del este y sureste, encendiendo algunos incendios forestales en las laderas superiores del volcán. 
+          </li><br>
+          
+          </ul> 
+        
+           
+           
+         </div>
+        </div>
+        <br>
+      
+      </div>
+     </div>
+     <br> <br><br><br>
+     <div data-role="footer" data-theme="a">
+     <h4>Yesenia Contreras Sanchez</h4>
+     </div>
+  
+   </div>
+   
+   <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>PREVENCIÓN</h1>
+     </div>
+     <div data-role="content" align="center">
+      <div>
+       
+       <div>
+        <img src="imagenes/prev.png" width="80%" height="20%">
+       </div>
+       <br><br><br>
+        <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            
+             <h2>MEDIDAS DE PREVENCIÓN</h2>
+             <p>Instrucciones para salvar su vida</p>
+             </a>
+           </li>
+           
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>MONITOREO</h2>
+             <p>Estado actual del volcán</p>
+             </a>
+           </li>
+           
+        </ul>
+        <br>
+        <div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+         <h1><strong>ESTADOS A LOS QUE AFECTARÍA</strong></h1>
+         
+          <p>El espacio territorial que se ha analizado en el estudio es de aproximadamente 15,708 km² y abarca el Distrito Federal, Tlaxcala, Morelos y parcialmente los estados de Hidalgo, México y Puebla.</p>
+           <div>
+              <img src="imagenes/peli.png" width="80%" height="30%">
+           </div>
+          
+          <p>Se limitarían a la cercanía del volcán, sobre radios del orden de 20 a 30 km. Un evento de esta naturaleza debería ser previsto por los sistemas de detección y monitoreo del volcán con anticipación suficiente para tomar medidas preventivas. En las grandes ciudades, como México, D.F., cuyo centro se encuentra a 72 km. del cráter del volcán, Puebla a unos 43 km., Cuernavaca a 63 km. o Tlaxcala a 53 km., los efectos de tal evento se limitarían a los problemas derivados de lluvias de cenizas volcánicas, similares a las del 30 de junio de 1997, pero más fuertes y con una proporción mayor de cenizas más gruesas.</p>
+           
+         </div>
+        </div>
+       
+      </div>
+     </div>
+     <br><br><br><br><br><br><br><br><br><br><br><br>
+     <div data-role="footer" data-theme="a">
+     <h4>Yesenia Contreras Sanchez</h4>
+     </div>
+  
+   </div>
+   
+   <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>OTROS VOLCANES</h1>
+     </div>
+     <div data-role="content" align="center">
+     
+        <div>
+          <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','imagenes/kil.png',1)"><img src="imagenes/otros.png" width="90%" height="30%" id="Image2" align="center"/></a>
+        </div>
+      <div>
+      
+       
+        <div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+         <h1><strong>KILAUEA</strong></h1>
+          <p>
+          Es un volcán en escudo hiperactivo en Hawái, y el más activo de los cinco volcanes que conforman la isla de Hawái; es también uno de los volcanes más activos de la Tierra. 
+          </p>
+          
+           <p>
+          La historia eruptiva del Kilauea ha sido larga y activa; su nombre significa «escupiendo» o «propagándose mucho» en hawaiano, en referencia a sus frecuentes derramamientos de lava. 
+          </p>
+           <div>
+              <img src="imagenes/kil3.png" width="80%" height="30%">
+           </div>
+           <p>
+         Históricamente, el pueblo hawaiano consideró los cinco volcanes de la isla como sagrados, y en la mitología hawaiana el cráter Halemaumau del Kilauea era visto como el cuerpo y el hogar de Pelé, la diosa asociada con el fuego, los rayos, el viento y los volcanes. William Ellis, un misionero de Inglaterra, pasó dos semanas viajando a lo largo del volcán y dio el primer relato moderno de Kilauea; desde su fundación por Thomas Jaggar en 1912, el Observatorio Vulcanológico de Hawái, que se encuentra al borde de la caldera del Kilauea, sirvió como la principal entidad de investigación científica del volcán y la isla en general.  
+          </p>
+          
+           <div>
+              <img src="imagenes/kil.png" width="80%" height="30%">
+           </div>
+           <p>
+         El elevado estado de actividad del Kilauea tiene un fuerte impacto sobre la ecología de sus laderas, donde el crecimiento de plantas a menudo se ve interrumpido por la caída de tefra y la deriva de dióxido de azufre volcánico, produciendo lluvias ácidas, sobre todo en una zona árida al sur de la zona de ruptura suroeste, conocida como el desierto de Kaʻū. No obstante, la vida silvestre prospera en lugares no perturbados del volcán y es altamente endémica como resultado del aislamiento del Kilauea (y de la isla de Hawai) de la masa de tierra más cercana. 
+          </p>
+           <div>
+              <img src="imagenes/kil2.png" width="80%" height="30%">
+           </div>
+           <p>
+        En 1912 se inició la siguiente etapa en la historia del estudio del Kilauea con el establecimiento del Observatorio Vulcanológico de Hawái en el borde del cráter del volcán. La construcción del observatorio fue concebido por Thomas Jaggar, jefe de geología del Instituto de Tecnología de Massachusetts y fue la primera instalación permanente de este tipo en los Estados Unidos; después de presenciar la devastación del terremoto de Messina de 1908 cerca del Monte Etna en Italia, declaró que habría que hacer algo para apoyar el estudio sistemático de la volcanología y sismología, y eligió el Kīlauea como sede del primer establecimiento. Después de asegurar los fondos de MIT y la Universidad de Hawai, Jaggar tomó cargo como director del observatorio entre 1912 y 1940, y fue un pionero en el estudio sismológico y la observación de volcanes activos.54 Después de que se agotó la financiación inicial, el observatorio fue financiado sucesivamente por el Servicio Meteorológico Nacional, el Servicio Geológico de Estados Unidos (USGS), y el Servicio de Parques Nacionales, para finalmente continuar bajo la bandera de USGS desde 1947. El edificio principal ha sido desplazado dos veces desde la creación del observatorio, y en la actualidad se ubica en el borde noroeste de la caldera del Kilauea.
+          </p>
+           
+         </div>
+        </div>
+        
+        
+       <div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+         <h1><strong>MONTE FUJI</strong></h1>
+          <p>
+         Es el pico más alto de la isla de Honshu y de todo Japón. Se encuentra entre las prefecturas de Shizuoka y Yamanashi en el Japón central y justo al oeste de Tokio, desde donde se puede observar en un día despejado. El Fuji es un volcán compuesto y es el símbolo de Japón 
+         </p>
+         
+         <p>
+         El monte Fuji es un atractivo cono volcánico y es un tema recurrente en el arte japonés. El trabajo con mayor renombre es la obra maestra 36 vistas del monte Fuji del pintor ukiyo-e Katsushika Hokusai. También aparece en la literatura japonesa y es el tema de muchos poemas.
+         </p>
+           <div>
+              <img src="imagenes/mon.png" width="80%" height="30%">
+           </div>
+
+          <p>
+         Después de la fase del "viejo Fuji", un período de inactividad de 4.000 años y que acabó hace 5.000 con la actual fase del "nuevo Fuji". Las erupciones del monte Fuji presentan corrientes de lava, emisiones de magma, de escorias y de ceniza volcánica, además de derrumbamientos y de las erupciones laterales, de donde viene el calificativo de «gran almacén de erupciones». Las cenizas del nuevo Fuji son a menudo negras y sus erupciones son recientes en términos de capas geológicas. Informaciones precisas se encuentran relatadas en los documentos históricos japoneses del siglo VIII. Presentan una serie de erupciones representativas.
+         </p>
+           <div>
+              <img src="imagenes/mon2.png" width="80%" height="30%">
+           </div>
+         <p>
+        Ha habido cuatro erupciones explosivas que se produjeron durante el periodo Jomon, hace aproximadamente 3000 años, conocidas bajo los nombres: Sengoku (Sg), Ōsawa scoria (Hueso), Ōmuro scoria (Olmo) y Sunazawa scoria (Zn). Cómo el viento sopla generalmente del oeste, en la región del monte Fuji, la mayoría de las tefras expulsadas cayeron en el este pero, en el caso del Ōsawa scoria, fueron llevadas por un viento del este hacia los alrededores de Hamamatsu.
+         </p>
+         
+         
+       <p>
+       Desde el año 781 se han registrado dieciséis erupciones, de las cuales, la mayoría han sido erupciones explosivas peleanas. La mayoría sucedieron durante el periodo Heian con doce erupciones entre el año 800 y el 1083. A veces, los periodos de inactividad pueden durar centenares de años como entre el 1083 y el14 No ha habido ninguna erupción en los últimos 300 años.
+         </p>
+          <div>
+              <img src="imagenes/mon3.png" width="80%" height="30%">
+           </div>
+          <p>
+     La prevención de los riesgos eruptivos está asegurada por el Coordinating Committee fuero Prediction of Volcanic Eruptions dependiente de la Agencia meteorológica del Japón (気象庁, Kishōchō) en lo que concierne la previsión y el control sísmico de los acontecimientos, el Cabinet Office en lo que concierne a la creación de un plan de evacuación y el Ministerio de Tierra, Infraestructura y Transporte (国土交通省, Kokudo-kōtsū-shō) para la protección contra los riesgos de corrimiento de tierras.
+
+Así, entre septiembre del 2000 y el enero del 2001, las sacudidas telúricas bajo el volcán pasaron de ser una o dos al mes a 35 en septiembre, 133 en octubre, 222 en noviembre, 144 en diciembre y 36 en enero de 2001, haciendo temer lo peor, antes de que todo volviera a la normalidad. Estas sacudidas eran en su mayoría de baja frecuencia y se situaban a quince kilómetros de profundidad, al nordeste de la cumbre.
+         </p>
+         
+         
+         
+           
+         </div>
+        </div>
+        
+      </div>
+     </div>
+     <br><br><br> <br> <br> <br> <br> <br><br><br><br><br> <br><br> <br>
+     <div data-role="footer" data-theme="a">
+     <h4>Yesenia Contreras Sanchez</h4>
+     </div>
+  
+   </div>
+   
+   <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>MONITOREO</h1>
+     </div>
+     <div data-role="content" align="center">
+      <div>
+       <div>
+         <img src="imagenes/med4.png" width="70%" height="13%">
+       </div>
+        
+      <p>Ante la actividad del volcán Popocatépetl, la Secretaría de Gobernación apoyada por diversas instituciones científicas desarrolló un sistema de alertamiento para determinar en qué momento la población y las autoridades de Protección Civil deberán activar las acciones correspondientes de prevención y auxilio.</p>
+      
+        <div>
+         <img src="imagenes/med1.png" width="50%" height="35%">
+        </div>
+        <br>
+        
+        <div>
+         <img src="imagenes/med2.png" width="50%" height="35%">
+        </div>
+        <br>
+        
+        <div>
+         <img src="imagenes/med3.png" width="50%" height="35%">
+        </div>
+        <br>
+        
+        <p>Un comité integrado por científicos del Centro Nacional de Prevención de Desastres (CENAPRED) y de la Universidad Nacional Autónoma de México (UNAM), vigila permanentemente al volcán mediante un moderno sistema de instrumentos. Cuando éste comité detecta en el volcán una situación que amerita tomar acciones para proteger a la población, informa a las autoridades de Protección Civil para que éstas, luego de una evaluación, avisen a las presidencias municipales y comités locales de Protección Civil, los cuales tienen la obligación de cambiar el color del semáforo para mantenerte informado.</p>
+        
+        <div>
+          <p><a href="http://www.cenapred.unam.mx:8080/monitoreoPopocatepetl/"><img src="imagenes/med5.png" width="80%" height="20%" ></a></p>
+          <p>
+          Da click a la imagen para entrar a CENAPRED
+          </p>
+        </div>
+        <br>
+
+      </div>
+     </div>
+     
+     <div data-role="footer" data-theme="a">
+     <h4>Yesenia Contreras Sanchez</h4>
+     </div>
+  
+   </div>
+    
+   <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>MEDIDAS DE PREVENCIÓN</h1>
+     </div>
+     <div data-role="content" align="center">
+      <div>
+       <p><strong>SI HAY UNA ERUPCION VOLCÁNICA TOMA EN CUENTA ESTAS MEDIDAS:</strong></p>
+       
+      </div>      
+        <div>
+        <img src="imagenes/erupcion.png" width="80%" height="30%">
+        </div>
+        
+      <div>
+       <br>
+       
+       <p> <strong>SI HAY CENIZA VOLCANICA TOMA EN CUENTA ESTAS MEDIDAS:</strong></p>
+       
+       <br>
+         <div>
+        <img src="imagenes/ceniza.png" width="80%" height="25%">
+        </div>
+        <div>
+        <p> <strong>SIGA TAMBIÉN LAS SIGUIENTES RECOMENDACIONES:</strong></p>
+        </div>
+         
+         <div>
+        <img src="imagenes/recom.png" width="50%" height="70%">
+        </div>
+         
+      </div>
+      
+     </div>
+    
+     <div data-role="footer" data-theme="a">
+     <h4>Yesenia Contreras Sanchez</h4>
+     </div>
+  
+   </div>
+    
+   
+   
+   
+   
+ </div>
+</body>
+</html>
+
